@@ -1,0 +1,163 @@
+﻿@model GymPro.Models.SetGoiTapViewModel
+
+@{
+    ViewBag.Title = "SuaGoiTap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="edit-container">
+    <h2>SuaGoiTap</h2>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>GoiTap</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.GoiTaps.goitap_ma)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GoiTaps.goitap_tengoi, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.GoiTaps.goitap_tengoi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GoiTaps.goitap_tengoi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GoiTaps.goitap_gia, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.GoiTaps.goitap_gia, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GoiTaps.goitap_gia, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GoiTaps.goitap_thoihan, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.GoiTaps.goitap_thoihan, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GoiTaps.goitap_thoihan, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GoiTaps.goitap_motagoi, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.GoiTaps.goitap_motagoi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GoiTaps.goitap_motagoi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+    <div>
+        @Html.ActionLink("Quay lại Danh sách", "GoiTapListView")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+<style>
+    body {
+        background-color: #161616;
+        color: #EDECFF;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .edit-container {
+        max-width: 650px;
+        margin: 60px auto;
+        padding: 20px;
+        background: #012E25;
+        border-radius: 16px;
+        box-shadow: 0 0 12px rgba(101, 199, 28, 0.25);
+    }
+
+    .form-title {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #AEE710;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-label {
+        display: block;
+        font-weight: 500;
+        color: #AEE710;
+        margin-bottom: 6px;
+    }
+
+    .custom-input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #0BA08B;
+        background-color: #161616;
+        color: #EDECFF;
+        transition: all 0.3s ease;
+    }
+
+        .custom-input:focus {
+            border-color: #65C71C;
+            box-shadow: 0 0 6px rgba(101, 199, 28, 0.4);
+            outline: none;
+        }
+
+    .btn-submit {
+        background-color: #65C71C;
+        color: #161616;
+        border: none;
+        padding: 10px 22px;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-right: 10px;
+    }
+
+        .btn-submit:hover {
+            background-color: #AEE710;
+            transform: translateY(-2px);
+        }
+
+    .btn-back {
+        color: #0BA08B;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .btn-back:hover {
+            color: #AEE710;
+            text-decoration: underline;
+        }
+
+    .text-danger {
+        color: #FF6B6B;
+        font-size: 0.9rem;
+    }
+
+    @@media (max-width: 768px) {
+        .edit-container {
+            padding: 15px;
+            margin: 30px 10px;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>

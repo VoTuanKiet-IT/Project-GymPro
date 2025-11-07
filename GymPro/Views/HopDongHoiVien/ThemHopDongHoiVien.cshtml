@@ -1,0 +1,64 @@
+﻿@model GymPro.Models.SetHopDongHoiVienViewModel
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>HopDongHoiVien</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HopDongHoiViens.hoivien_ma, "Hội viên", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.HopDongHoiViens.hoivien_ma,
+                                     (SelectList)ViewBag.HoiViens,
+                                     "Chọn hội viên",
+                                     new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.HopDongHoiViens.hoivien_ma, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HopDongHoiViens.goitap_ma, "Gói tập", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.HopDongHoiViens.goitap_ma,
+                                     (SelectList)ViewBag.GoiTaps,
+                                     "Chọn gói tập",
+                                     new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.HopDongHoiViens.goitap_ma, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HopDongHoiViens.hdhoivien_trangthai, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HopDongHoiViens.hdhoivien_trangthai, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HopDongHoiViens.hdhoivien_trangthai, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ngaybatdau, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ngaybatdau, new { htmlAttributes = new { @class = "form-control", type = "date" } })
+                @Html.ValidationMessageFor(model => model.ngaybatdau, "", new { @class = "text-danger" })
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

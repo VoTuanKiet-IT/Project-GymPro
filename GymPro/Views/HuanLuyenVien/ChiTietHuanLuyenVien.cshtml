@@ -1,0 +1,169 @@
+﻿@model GymPro.Models.ChiTietHuanLuyenVienViewModel
+
+<div class="hlv-detail-container">
+    <div class="hlv-card">
+        <div class="hlv-header">
+            <img src="@Model.HuanLuyenViens.hlv_hinhanh" alt="Huấn luyện viên" class="hlv-avatar" />
+            <div class="hlv-info">
+                <h2>@Model.HuanLuyenViens.hlv_hodem @Model.HuanLuyenViens.hlv_ten</h2>
+                <p><strong>Email:</strong> @Model.HuanLuyenViens.hlv_email</p>
+                <p><strong>Điện thoại:</strong> @Model.HuanLuyenViens.hlv_dienthoai</p>
+                <p><strong>Giới tính:</strong> @Model.gioitinh</p>
+                <p><strong>Ngày sinh:</strong> @Model.ngaysinh.ToString("dd/MM/yyyy")</p>
+                <p><strong>Địa chỉ:</strong> @Model.HuanLuyenViens.hlv_diachi</p>
+                <p><strong>Ngày nhận việc:</strong> @Model.ngaynhanviec.ToString("dd/MM/yyyy")</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chuyenmon-section">
+        <h3>🧠 Các chuyên môn của huấn luyện viên</h3>
+        <table class="table table-hover shadow-sm">
+            <thead>
+                <tr>
+                    <th>Tên chuyên môn</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.DSChuyenMons)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.chuyenmon_ten)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="action-links">
+        @Html.ActionLink("✏️ Chỉnh sửa", "SuaHuanLuyenVien", new { id = Model.HuanLuyenViens.hlv_ma }, new { @class = "btn-action edit" })
+        @Html.ActionLink("⬅️ Quay lại danh sách", "HLVListView", null, new { @class = "btn-action back" })
+    </div>
+</div>
+
+<style>
+    .hlv-detail-container {
+        background-color: #0F0F0F;
+        color: #EDECFF;
+        font-family: 'Poppins', sans-serif;
+        padding: 40px;
+        border-radius: 12px;
+    }
+
+    .hlv-card {
+        background: #161616;
+        border: 1px solid #2A2A2A;
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .hlv-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .hlv-avatar {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 25px;
+        border: 3px solid #65C71C;
+        box-shadow: 0 0 15px rgba(101,199,28,0.4);
+    }
+
+    .hlv-info h2 {
+        color: #AEE710;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .hlv-info p {
+        margin: 4px 0;
+        line-height: 1.5;
+    }
+
+    .chuyenmon-section {
+        margin-top: 40px;
+    }
+
+        .chuyenmon-section h3 {
+            color: #65C71C;
+            margin-bottom: 15px;
+        }
+
+    table.table {
+        width: 100%;
+        background-color: #161616;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        table.table th, table.table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #2A2A2A;
+        }
+
+        table.table th {
+            background-color: #012E25;
+            color: #AEE710;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        table.table tr:hover {
+            background-color: #1C1C1C;
+        }
+
+    .action-links {
+        margin-top: 30px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .btn-action {
+        text-decoration: none;
+        padding: 10px 18px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+        .btn-action.edit {
+            background-color: #0BA08B;
+            color: #fff;
+        }
+
+        .btn-action.back {
+            background-color: #65C71C;
+            color: #161616;
+        }
+
+        .btn-action:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+    @@media (max-width: 768px) {
+        .hlv-card {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hlv-avatar {
+            margin: 0 0 20px 0;
+        }
+
+        .hlv-info h2 {
+            font-size: 1.5rem;
+        }
+    }
+</style>

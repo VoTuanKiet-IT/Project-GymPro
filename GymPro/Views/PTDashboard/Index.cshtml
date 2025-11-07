@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "PT Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Welcome, Personal Trainer!</h2>
+
+<div class="alert alert-info">
+    Xin chào <strong>Huấn luyện viên</strong>! Dưới đây là các chức năng bạn có thể truy cập.
+</div>
+
+<div class="container mt-4">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="/LichTap/DangKyLichVoiPT">📅 Quản lý lịch tập của học viên</a>
+        </li>
+        <li class="list-group-item">
+            <a href="/HoiVien/HoiVienListView">💪 Xem danh sách học viên</a>
+        </li>
+        <li class="list-group-item">
+            <a href="/HuanLuyenVien/HLVListView">📊 Thống kê hiệu suất huấn luyện</a>
+        </li>
+        <li class="list-group-item">
+            <a href="/SanPham/SanPhamListView">🛒 Cửa hàng Gym</a>
+        </li>
+    </ul>
+</div>

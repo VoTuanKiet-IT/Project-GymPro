@@ -1,0 +1,208 @@
+﻿@model GymPro.Models.SetHuanLuyenVienViewModel
+
+@{
+    ViewBag.Title = "Sửa Huấn Luyện Viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="hlv-edit-container">
+    <h2 class="page-title">🧑‍🏫 Sửa thông tin Huấn Luyện Viên</h2>
+    <hr class="divider" />
+
+    @using (Html.BeginForm("SuaHuanLuyenVien", "HuanLuyenVien", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.HuanLuyenViens.hlv_ma)
+
+        <div class="form-card">
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_ten, htmlAttributes: new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_ten, new { htmlAttributes = new { @class = "form-control custom-input" } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_ten, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_email, htmlAttributes: new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_email, new { htmlAttributes = new { @class = "form-control custom-input" } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_email, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_dienthoai, htmlAttributes: new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_dienthoai, new { htmlAttributes = new { @class = "form-control custom-input" } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_dienthoai, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_ngaynhanviec, htmlAttributes: new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_ngaynhanviec, new { htmlAttributes = new { @class = "form-control custom-input", @type = "date" } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_ngaynhanviec, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Chuyên môn", htmlAttributes: new { @class = "form-label" })
+                <div class="chuyenmon-list">
+                    @foreach (var chuyenMon in Model.ChuyenMons)
+                    {
+                        var isSelected = Model.ChuyenMonDaChon.Contains(chuyenMon.chuyenmon_ma);
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="ChuyenMonDaChon" value="@chuyenMon.chuyenmon_ma" @(isSelected ? "checked" : "") />
+                            <span>@chuyenMon.chuyenmon_ten</span>
+                        </label>
+                    }
+                </div>
+                @Html.ValidationMessageFor(model => model.ChuyenMonDaChon, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="💾 Lưu thay đổi" class="btn-save" />
+                @Html.ActionLink("⬅️ Quay lại danh sách", "HLVListView", null, new { @class = "btn-back" })
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<style>
+    body {
+        background-color: #0F0F0F;
+        color: #EDECFF;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .hlv-edit-container {
+        background-color: #161616;
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 800px;
+        margin: 40px auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .page-title {
+        color: #AEE710;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .divider {
+        border: 1px solid #2A2A2A;
+        margin-bottom: 25px;
+    }
+
+    .form-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-label {
+        font-weight: 500;
+        color: #AEE710;
+        margin-bottom: 8px;
+    }
+
+    .custom-input {
+        background-color: #1E1E1E;
+        border: 1px solid #333;
+        border-radius: 6px;
+        padding: 10px;
+        color: #EDECFF;
+        transition: all 0.3s ease;
+    }
+
+        .custom-input:focus {
+            border-color: #65C71C;
+            outline: none;
+            box-shadow: 0 0 5px rgba(101, 199, 28, 0.4);
+        }
+
+    .chuyenmon-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        margin-top: 8px;
+        background-color: #111;
+        padding: 10px 15px;
+        border-radius: 8px;
+    }
+
+    .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #EDECFF;
+    }
+
+        .checkbox-item input[type="checkbox"] {
+            accent-color: #65C71C;
+            transform: scale(1.2);
+        }
+
+    .form-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .btn-save, .btn-back {
+        border: none;
+        padding: 10px 18px;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-save {
+        background-color: #0BA08B;
+        color: #fff;
+    }
+
+        .btn-save:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+    .btn-back {
+        background-color: #65C71C;
+        color: #161616;
+    }
+
+        .btn-back:hover {
+            transform: scale(1.05);
+            background-color: #83E42A;
+        }
+
+    .text-danger {
+        color: #FF6B6B;
+        font-size: 0.9rem;
+    }
+
+    @@media (max-width: 768px) {
+        .hlv-edit-container {
+            padding: 20px;
+        }
+
+        .form-buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn-save, .btn-back {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>

@@ -1,0 +1,77 @@
+﻿
+@model IEnumerable<GymPro.Models.SanPham>
+
+@{
+    ViewBag.Title = "SanPhamListView";
+}
+
+<h2>SanPhamListView</h2>
+@if (User.IsInRole("Admin"))
+{
+    <a href="@Url.Action("Thêm Sản Phẩm", "ThemSanPham")" class="btn btn-primary">+ Thêm sản phẩm</a>
+}
+
+<br />
+<p>
+    @Html.ActionLink("Danh mục loại sản phẩm", "LoaiSanPhamListView")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            STT
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.loaisanpham.loaisanpham_ten)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sanpham_ten)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sanpham_gia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sanpham_hinhanhchinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sanpham_mota)
+        </th>
+        <th></th>
+    </tr>
+
+    @{
+        int stt = 1;
+    }
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @stt
+                @{
+                    stt++;
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.loaisanpham.loaisanpham_ten)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sanpham_ten)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sanpham_gia)
+            </td>
+            <td>
+                <img src="@item.sanpham_hinhanhchinh" alt="Hình sản phẩm" style="max-width: 100px; max-height: 100px;" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sanpham_mota)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "SuaSanPham", new { id = item.sanpham_ma }) |
+                @Html.ActionLink("Details", "Details", new { id = item.sanpham_ma }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.sanpham_ma })
+            </td>
+        </tr>
+    }
+
+</table>

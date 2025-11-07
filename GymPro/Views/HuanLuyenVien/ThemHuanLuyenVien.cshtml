@@ -1,0 +1,263 @@
+﻿@model GymPro.Models.SetHuanLuyenVienViewModel
+@{
+    ViewBag.Title = "Thêm Huấn Luyện Viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="hlv-container">
+    <h2 class="page-title">👟 Thêm Huấn Luyện Viên Mới</h2>
+    <hr class="divider" />
+
+    @using (Html.BeginForm("ThemHuanLuyenVien", "HuanLuyenVien", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-card">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <h4 class="section-title">Thông Tin Cá Nhân</h4>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_hodem, new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_hodem, new { htmlAttributes = new { @class = "form-control custom-input", placeholder = "Nhập họ đệm..." } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_hodem, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_ten, new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_ten, new { htmlAttributes = new { @class = "form-control custom-input", placeholder = "Nhập tên..." } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_ten, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_email, new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_email, new { htmlAttributes = new { @class = "form-control custom-input", placeholder = "example@email.com" } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_email, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_dienthoai, new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_dienthoai, new { htmlAttributes = new { @class = "form-control custom-input", placeholder = "Nhập số điện thoại..." } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_dienthoai, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Giới tính", new { @class = "form-label" })
+                <div class="radio-group">
+                    <label class="radio-option">
+                        @Html.RadioButtonFor(model => model.HuanLuyenViens.hlv_gioitinh, true) Nam
+                    </label>
+                    <label class="radio-option">
+                        @Html.RadioButtonFor(model => model.HuanLuyenViens.hlv_gioitinh, false) Nữ
+                    </label>
+                </div>
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_gioitinh, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ngaysinh, new { @class = "form-label" })
+                @Html.EditorFor(model => model.ngaysinh, new { htmlAttributes = new { @class = "form-control custom-input", type = "date" } })
+                @Html.ValidationMessageFor(model => model.ngaysinh, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HuanLuyenViens.hlv_diachi, new { @class = "form-label" })
+                @Html.EditorFor(model => model.HuanLuyenViens.hlv_diachi, new { htmlAttributes = new { @class = "form-control custom-input", placeholder = "Nhập địa chỉ..." } })
+                @Html.ValidationMessageFor(model => model.HuanLuyenViens.hlv_diachi, "", new { @class = "text-danger" })
+            </div>
+
+            <h4 class="section-title mt-4">Thông Tin Công Việc</h4>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ngaynhanviec, new { @class = "form-label" })
+                @Html.EditorFor(model => model.ngaynhanviec, new { htmlAttributes = new { @class = "form-control custom-input", type = "date" } })
+                @Html.ValidationMessageFor(model => model.ngaynhanviec, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Chuyên môn", new { @class = "form-label" })
+                <div class="checkbox-group">
+                    @foreach (var chuyenMon in Model.ChuyenMons)
+                    {
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="ChuyenMonDaChon" value="@chuyenMon.chuyenmon_ma" />
+                            @chuyenMon.chuyenmon_ten
+                        </label>
+                    }
+                </div>
+                @Html.ValidationMessageFor(model => model.ChuyenMonDaChon, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Ảnh đại diện", new { @class = "form-label" })
+                <input type="file" name="huanluyenvien_anhdaidien_file" id="huanluyenvien_anhdaidien_file" class="form-control custom-input" />
+                <img id="imagePreview" src="#" alt="Xem trước ảnh" style="max-width: 200px; display: none; margin-top: 10px;" />
+                @Html.ValidationMessageFor(model => model.huanluyenvien_anhdaidien_file, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-actions">
+                <input type="submit" value="💾 Lưu Huấn Luyện Viên" class="btn-save" />
+                @Html.ActionLink("⬅️ Quay lại danh sách", "HLVListView", null, new { @class = "btn-back" })
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            $("#huanluyenvien_anhdaidien_file").change(function () {
+                if (this.files && this.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $("#imagePreview").attr('src', e.target.result).show();
+                    }
+                    reader.readAsDataURL(this.files[0]);
+                } else {
+                    $("#imagePreview").hide();
+                }
+            });
+        });
+    </script>
+}
+
+<style>
+    body {
+        background-color: #161616;
+        color: #EDECFF;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .hlv-container {
+        background-color: #0F0F0F;
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 800px;
+        margin: 40px auto;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .page-title {
+        color: #AEE710;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .divider {
+        border: 1px solid #333;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        color: #65C71C;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        border-left: 4px solid #65C71C;
+        padding-left: 10px;
+    }
+
+    .form-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-label {
+        color: #AEE710;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    .custom-input {
+        background-color: #1E1E1E;
+        border: 1px solid #333;
+        border-radius: 6px;
+        padding: 10px;
+        color: #EDECFF;
+        transition: all 0.3s ease;
+    }
+
+        .custom-input:focus {
+            border-color: #65C71C;
+            outline: none;
+            box-shadow: 0 0 5px rgba(101, 199, 28, 0.5);
+        }
+
+    .radio-group, .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .radio-option, .checkbox-option {
+        background-color: #1E1E1E;
+        padding: 6px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        .radio-option:hover, .checkbox-option:hover {
+            background-color: #0BA08B;
+            color: #fff;
+        }
+
+    .form-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .btn-save, .btn-back {
+        border: none;
+        padding: 10px 18px;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-save {
+        background-color: #0BA08B;
+        color: #fff;
+    }
+
+        .btn-save:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+    .btn-back {
+        background-color: #65C71C;
+        color: #161616;
+    }
+
+        .btn-back:hover {
+            transform: scale(1.05);
+            background-color: #83E42A;
+        }
+
+    .text-danger {
+        color: #FF6B6B;
+        font-size: 0.9rem;
+    }
+
+    @@media (max-width: 768px) {
+        .hlv-container {
+            padding: 20px;
+        }
+
+        .form-actions {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn-save, .btn-back {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>

@@ -1,0 +1,263 @@
+﻿@model GymPro.Models.ChiTietHoiVienViewModel
+
+@{
+    ViewBag.Title = "Chi tiết hội viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="hoivien-detail-container">
+    <h2 class="page-title">Chi tiết hội viên</h2>
+
+    <div class="info-card">
+        <div class="info-header">
+            <img src="@Model.hoivien.hoiviens.hoivien_hinhanh"
+                 alt="Hình hội viên"
+                 class="profile-img" />
+            <div class="info-summary">
+                <h3>@(Model.hoivien.hoiviens.hoivien_hodem + " " + Model.hoivien.hoiviens.hoivien_ten)</h3>
+                <p><strong>Email:</strong> @Model.hoivien.hoiviens.hoivien_email</p>
+                <p><strong>SĐT:</strong> @Model.hoivien.hoiviens.hoivien_dienthoai</p>
+                <p><strong>Giới tính:</strong> @Model.hoivien.gioitinh</p>
+            </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="detail-section">
+            <h4>Thông tin cá nhân</h4>
+            <dl class="info-list">
+                <dt>Ngày sinh</dt>
+                <dd>@Model.hoivien.ngaysinh.ToString("dd/MM/yyyy")</dd>
+
+                <dt>Địa chỉ</dt>
+                <dd>@Model.hoivien.hoiviens.hoivien_diachi</dd>
+
+                <dt>Ngày đăng ký</dt>
+                <dd>@Model.hoivien.ngaydangky.ToString("dd/MM/yyyy")</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h4>Hợp đồng hội viên</h4>
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Gói tập</th>
+                    <th>Thời hạn</th>
+                    <th>Ngày bắt đầu</th>
+                    <th>Ngày kết thúc</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.listhopdong)
+                {
+                    <tr>
+                        <td>@item.goitap.goitap_tengoi</td>
+                        <td>@item.goitap.goitap_thoihan</td>
+                        <td>@item.ngaybatdau.ToString("dd/MM/yyyy")</td>
+                        <td>@item.ngayketthuc.ToString("dd/MM/yyyy")</td>
+                        <td>@item.hopdonghoivien.hdhoivien_trangthai</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-card">
+        <div class="section-header">
+            <h4>Lịch tập với PT</h4>
+            @Html.ActionLink("Đăng ký lịch tập", "DangKyLichVoiPT", "LichTap", new { id = Model.hoivien.hoiviens.hoivien_ma }, new { @class = "btn-add" })
+        </div>
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Ngày tập</th>
+                    <th>Huấn luyện viên</th>
+                    <th>Ca tập</th>
+                    <th>Mô tả</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.listlichtap)
+                {
+                    <tr>
+                        <td>@item.ngaytap.ToString("dd/MM/yyyy")</td>
+                        <td>@item.huanluyenvien.TenDayDu</td>
+                        <td>@item.catap.catap_ten</td>
+                        <td>@item.catap.catap_mota</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer-links">
+        @Html.ActionLink("Sửa", "Edit", new { id = Model.hoivien.hoiviens.hoivien_ma }, new { @class = "action-btn edit" }) |
+        @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "action-btn back" })
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #161616;
+        color: #EDECFF;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .hoivien-detail-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 25px;
+        background-color: #012E25;
+        border-radius: 14px;
+        box-shadow: 0 0 20px rgba(101, 199, 28, 0.3);
+    }
+
+    .page-title {
+        text-align: center;
+        color: #AEE710;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .info-card {
+        background-color: #161616;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+
+    .info-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 3px solid #65C71C;
+        object-fit: cover;
+    }
+
+    .info-summary h3 {
+        color: #AEE710;
+        font-weight: 600;
+    }
+
+    .divider {
+        border: none;
+        border-bottom: 1px solid #0BA08B;
+        margin: 15px 0;
+    }
+
+    .detail-section h4 {
+        color: #65C71C;
+        margin-bottom: 10px;
+    }
+
+    .info-list dt {
+        font-weight: 600;
+        color: #AEE710;
+    }
+
+    .info-list dd {
+        margin-bottom: 10px;
+    }
+
+    .section-card {
+        background-color: #161616;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-add {
+        background-color: #65C71C;
+        color: #161616;
+        font-weight: 600;
+        padding: 8px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .btn-add:hover {
+            background-color: #AEE710;
+        }
+
+    .custom-table {
+        width: 100%;
+        margin-top: 15px;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .custom-table th {
+            background-color: #0BA08B;
+            color: #161616;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .custom-table td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #0BA08B;
+        }
+
+        .custom-table tr:hover {
+            background-color: rgba(101, 199, 28, 0.1);
+            transition: 0.3s;
+        }
+
+    .footer-links {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .action-btn {
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+        .action-btn.edit {
+            background-color: #65C71C;
+            color: #161616;
+        }
+
+        .action-btn.back {
+            background-color: #0BA08B;
+            color: #EDECFF;
+        }
+
+        .action-btn:hover {
+            opacity: 0.9;
+        }
+
+    @@media (max-width: 768px) {
+        .info-header {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>

@@ -1,0 +1,169 @@
+﻿@model GymPro.Models.ChuyenMon
+
+@{
+    ViewBag.Title = "Thêm Chuyên Môn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="chuyenmon-container">
+    <h2 class="page-title">🏋️‍♂️ Thêm Chuyên Môn Mới</h2>
+    <hr class="divider" />
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-card">
+            <h4 class="section-title">Thông Tin Chuyên Môn</h4>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.chuyenmon_ten, htmlAttributes: new { @class = "form-label" })
+                @Html.EditorFor(model => model.chuyenmon_ten, new { htmlAttributes = new { @class = "form-control custom-input", placeholder = "Nhập tên chuyên môn..." } })
+                @Html.ValidationMessageFor(model => model.chuyenmon_ten, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.chuyenmon_mota, htmlAttributes: new { @class = "form-label" })
+                @Html.EditorFor(model => model.chuyenmon_mota, new { htmlAttributes = new { @class = "form-control custom-input", placeholder = "Nhập mô tả chuyên môn..." } })
+                @Html.ValidationMessageFor(model => model.chuyenmon_mota, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="💾 Lưu chuyên môn" class="btn-save" />
+                @Html.ActionLink("⬅️ Quay lại danh sách", "ChuyenMonListView", null, new { @class = "btn-back" })
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<style>
+    body {
+        background-color: #0F0F0F;
+        color: #EDECFF;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .chuyenmon-container {
+        background-color: #161616;
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 700px;
+        margin: 40px auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .page-title {
+        color: #AEE710;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .divider {
+        border: 1px solid #333;
+        margin-bottom: 25px;
+    }
+
+    .form-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-title {
+        color: #65C71C;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+        border-left: 4px solid #65C71C;
+        padding-left: 10px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-label {
+        font-weight: 500;
+        color: #AEE710;
+        margin-bottom: 8px;
+    }
+
+    .custom-input {
+        background-color: #1E1E1E;
+        border: 1px solid #333;
+        border-radius: 6px;
+        padding: 10px;
+        color: #EDECFF;
+        transition: all 0.3s ease;
+    }
+
+        .custom-input:focus {
+            border-color: #65C71C;
+            outline: none;
+            box-shadow: 0 0 5px rgba(101, 199, 28, 0.4);
+        }
+
+    .form-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .btn-save, .btn-back {
+        border: none;
+        padding: 10px 18px;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-save {
+        background-color: #0BA08B;
+        color: #fff;
+    }
+
+        .btn-save:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+    .btn-back {
+        background-color: #65C71C;
+        color: #161616;
+    }
+
+        .btn-back:hover {
+            transform: scale(1.05);
+            background-color: #83E42A;
+        }
+
+    .text-danger {
+        color: #FF6B6B;
+        font-size: 0.9rem;
+    }
+
+    @@media (max-width: 768px) {
+        .chuyenmon-container {
+            padding: 20px;
+        }
+
+        .form-buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn-save, .btn-back {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>

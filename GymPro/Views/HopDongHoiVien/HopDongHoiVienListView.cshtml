@@ -1,0 +1,185 @@
+﻿@model GymPro.Models.HopDongHoiVienViewModel
+
+@{
+    ViewBag.Title = "Danh sách hợp đồng hội viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="contract-container">
+    <h2 class="page-title">📜 Danh Sách Hợp Đồng Hội Viên</h2>
+
+    @if (User.IsInRole("Admin") || User.IsInRole("PT"))
+    {
+        <a href="@Url.Action("ThemHopDongHoiVien", "HopDongHoiVien")" class="btn-add">+ Thêm hợp đồng hội viên</a>
+    }
+
+    <div class="table-responsive">
+        <table class="table contract-table">
+            <thead>
+                <tr>
+                    <th>Mã HĐ</th>
+                    <th>Mã Hội Viên</th>
+                    <th>Họ đệm</th>
+                    <th>Tên</th>
+                    <th>Gói tập</th>
+                    <th>Thời hạn</th>
+                    <th>Ngày bắt đầu</th>
+                    <th>Ngày kết thúc</th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.HopDongHoiViens)
+                {
+                    <tr>
+                        <td>@item.hopdonghoivien.hdhoivien_ma</td>
+                        <td>@item.hopdonghoivien.hoivien_ma</td>
+                        <td>@item.hoivien.hoivien_hodem</td>
+                        <td>@item.hoivien.hoivien_ten</td>
+                        <td>@item.goitap.goitap_tengoi</td>
+                        <td>@item.goitap.goitap_thoihan</td>
+                        <td>@item.ngaybatdau</td>
+                        <td>@item.ngayketthuc</td>
+                        <td>
+                            @{
+                                bool isActive = string.Equals(item.hopdonghoivien.hdhoivien_trangthai, "Active", StringComparison.OrdinalIgnoreCase);
+                                string statusText = isActive ? "Còn hiệu lực" : "Hết hạn";
+                                string statusClass = isActive ? "active" : "inactive";
+                            }
+
+                            <span class="status @statusClass">
+                                @statusText
+                            </span>
+                        </td>
+                        <td class="action-links">
+                            @Html.ActionLink("✏️ Sửa", "SuaHopDongHoiVien", new { id = item.hopdonghoivien.hdhoivien_ma }) |
+                            @Html.ActionLink("🔍 Chi tiết", "ChiTietHopDongHoiVien", new { id = item.hopdonghoivien.hdhoivien_ma }) |
+                            @Html.ActionLink("🗑️ Xóa", "Delete", new { id = item.hopdonghoivien.hdhoivien_ma })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #161616;
+        font-family: 'Poppins', sans-serif;
+        color: #EDECFF;
+    }
+
+    .contract-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        background-color: #012E25;
+        padding: 30px;
+        border-radius: 14px;
+        box-shadow: 0 0 25px rgba(101, 199, 28, 0.25);
+    }
+
+    .page-title {
+        text-align: center;
+        color: #AEE710;
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .btn-add {
+        display: inline-block;
+        background-color: #65C71C;
+        color: #161616;
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+        margin-bottom: 20px;
+    }
+
+    .btn-add:hover {
+        background-color: #AEE710;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        color: #EDECFF;
+    }
+
+    .contract-table thead {
+        background-color: #0BA08B;
+        color: #161616;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .contract-table th, .contract-table td {
+        padding: 12px 15px;
+        text-align: center;
+        border-bottom: 1px solid #0BA08B;
+    }
+
+    .contract-table tr:nth-child(even) {
+        background-color: #1e1e1e;
+    }
+
+    .contract-table tr:hover {
+        background-color: #0BA08B;
+        color: #161616;
+        transition: 0.2s;
+    }
+
+    .status {
+        padding: 4px 10px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .status.active {
+        color: #65C71C; 
+        font-weight: bold;
+    }
+
+    .status.inactive {
+        color: #999;
+        font-style: italic;
+    }
+
+
+    .action-links a {
+        color: #AEE710;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .action-links a:hover {
+        color: #0BA08B;
+        text-decoration: underline;
+    }
+
+    @@media (max-width: 768px) {
+        .contract-container {
+            padding: 20px;
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+        }
+
+        .table th, .table td {
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+
+        .btn-add {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>

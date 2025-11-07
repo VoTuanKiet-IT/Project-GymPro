@@ -1,0 +1,78 @@
+﻿@model GymPro.Models.SetLichTapVoiPTViewModel
+
+@{
+    ViewBag.Title = "Đăng ký Lịch tập với PT";
+}
+
+<h2>Đăng ký Lịch tập với PT</h2>
+@if (User.IsInRole("Admin,PT,User"))
+{
+    <a href="@Url.Action("Đăng ký Lịch tập với PT", "ThemLichTap")" class="btn btn-primary">+ Đăng ký Lịch tập với PT</a>
+}
+<hr />
+
+@using (Html.BeginForm("DangKyLichVoiPT", "LichTap", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <h3>Thông tin Hội viên</h3>
+        <p>Mã Hội viên: <strong>@Model.hoivien_ma</strong></p>
+
+        @Html.HiddenFor(model => model.hoivien_ma)
+
+        <hr />
+
+        <h3>Thông tin Lịch đăng ký</h3>
+        @* Trường chọn Ngày Tập (Input type="date") *@
+        <div class="form-group">
+            @Html.LabelFor(model => model.ngaytap, "Ngày Tập", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ngaytap, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(model => model.ngaytap, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @* Trường chọn Ca Tập *@
+        <div class="form-group">
+            @Html.LabelFor(model => model.selected_catap_ma, "Ca Tập", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.selected_catap_ma,
+                                          new SelectList(Model.CaTaps, "catap_ma", "catap_DropdownDisplay"),
+                                          "--- Chọn Ca Tập ---",
+                                          new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.selected_catap_ma, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @* Trường chọn Huấn luyện viên *@
+        <div class="form-group">
+            @Html.LabelFor(model => model.selected_hlv_ma, "Huấn luyện viên", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.selected_hlv_ma,
+                                          new SelectList(Model.HuanLuyenViens, "hlv_ma", "TenDayDu"),
+                                          "--- Chọn PT ---",
+                                          new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.selected_hlv_ma, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Đăng ký" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Quay lại", "ActionTruocDo")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,155 @@
+﻿@model IEnumerable<GymPro.Models.ChuyenMon>
+
+@{
+    ViewBag.Title = "Danh sách chuyên môn";
+}
+
+<div class="chuyenmon-container">
+    <div class="header-section">
+        <h2>📘 Danh sách chuyên môn</h2>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <a href="@Url.Action("ThemChuyenMon", "HuanLuyenVien")" class="btn btn-create">
+                + Thêm chuyên môn mới
+            </a>
+        }
+    </div>
+
+    <table class="table table-hover shadow-sm">
+        <thead>
+            <tr>
+                <th>Tên chuyên môn</th>
+                <th>Mô tả</th>
+                <th style="width: 180px;">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.chuyenmon_ten)</td>
+                    <td>@Html.DisplayFor(modelItem => item.chuyenmon_mota)</td>
+                    <td class="action-links">
+                        @Html.ActionLink("✏️ Sửa", "SuaChuyenMon", new { id = item.chuyenmon_ma }, new { @class = "btn-action edit" })
+                        @Html.ActionLink("🔍 Xem", "ChiTietChuyenMon", new { id = item.chuyenmon_ma }, new { @class = "btn-action view" })
+                        @Html.ActionLink("🗑️ Xóa", "Delete", new { id = item.chuyenmon_ma }, new { @class = "btn-action delete" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    /* Giao diện tổng thể */
+    .chuyenmon-container {
+        background-color: #0F0F0F;
+        padding: 30px;
+        border-radius: 12px;
+        color: #EDECFF;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+        .header-section h2 {
+            color: #65C71C;
+            font-weight: 600;
+            margin: 0;
+        }
+
+    /* Nút thêm mới */
+    .btn-create {
+        background-color: #65C71C;
+        color: #161616;
+        font-weight: 600;
+        padding: 8px 18px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+
+        .btn-create:hover {
+            background-color: #8BEF39;
+            color: #000;
+        }
+
+    /* Bảng dữ liệu */
+    table.table {
+        width: 100%;
+        background-color: #161616;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        table.table th, table.table td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid #2A2A2A;
+        }
+
+        table.table th {
+            background-color: #012E25;
+            color: #AEE710;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        table.table tr:hover {
+            background-color: #1C1C1C;
+        }
+
+    /* Các nút hành động */
+    .btn-action {
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        margin-right: 5px;
+        transition: all 0.25s ease;
+    }
+
+        .btn-action.edit {
+            background-color: #0BA08B;
+            color: #fff;
+        }
+
+        .btn-action.view {
+            background-color: #65C71C;
+            color: #161616;
+        }
+
+        .btn-action.delete {
+            background-color: #E74C3C;
+            color: #fff;
+        }
+
+        .btn-action:hover {
+            opacity: 0.85;
+            transform: scale(1.05);
+        }
+
+    /* Responsive */
+    @@media (max-width: 768px) {
+        .chuyenmon-container {
+            padding: 15px;
+        }
+
+        table.table th, table.table td {
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        .btn-action {
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+</style>

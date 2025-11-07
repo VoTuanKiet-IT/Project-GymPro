@@ -1,0 +1,333 @@
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\GymPro.dll.config
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\GymPro.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\GymPro.pdb
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Antlr3.Runtime.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\EntityFramework.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Newtonsoft.Json.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Owin.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Helpers.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Mvc.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Optimization.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Razor.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.Razor.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\WebGrease.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\EntityFramework.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Helpers.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Mvc.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Optimization.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Razor.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.Razor.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Newtonsoft.Json.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Antlr3.Runtime.pdb
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.Migrations.InitDatabase.resources
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.Migrations.AddUserFields.resources
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.csproj.Up2Date
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.pdb
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csc.exe
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csc.exe.config
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csc.rsp
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csi.exe
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csi.exe.config
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csi.rsp
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.AppContext.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Console.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.IO.Compression.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Net.Http.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Net.Sockets.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.ValueTuple.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Xml.XPath.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\vbc.exe
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\vbc.exe.config
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\vbc.rsp
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\VBCSCompiler.exe
+C:\Users\LENOVO\source\repos\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\GymPro.dll.config
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\GymPro.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\GymPro.pdb
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csc.exe
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csc.exe.config
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csc.rsp
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csi.exe
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csi.exe.config
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\csi.rsp
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.AppContext.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Console.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.IO.Compression.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Net.Http.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Net.Sockets.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.ValueTuple.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Xml.XPath.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\vbc.exe
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\vbc.exe.config
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\vbc.rsp
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\VBCSCompiler.exe
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Antlr3.Runtime.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\EntityFramework.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\EntityFramework.SqlServer.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Newtonsoft.Json.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Owin.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Helpers.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Mvc.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Optimization.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Razor.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.Deployment.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.Razor.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\WebGrease.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\EntityFramework.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\EntityFramework.SqlServer.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Helpers.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Mvc.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Optimization.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.Razor.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.Deployment.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\System.Web.WebPages.Razor.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Newtonsoft.Json.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Antlr3.Runtime.pdb
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.csproj.AssemblyReference.cache
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.Migrations.InitDatabase.resources
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.Migrations.AddUserFields.resources
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.csproj.GenerateResource.cache
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.csproj.CoreCompileInputs.cache
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.csproj.Up2Date
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.dll
+C:\Users\vokie\Documents\Zalo Received Files\GymPro-bd6f79415fd38cb1e901a3222e7a2888fcdaf5fe\GymPro\obj\Debug\GymPro.pdb
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\GymPro.dll.config
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\GymPro.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\GymPro.pdb
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\csc.exe
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\csc.exe.config
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\csc.rsp
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\csi.exe
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\csi.exe.config
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\csi.rsp
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.Managed.Core.targets
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.AppContext.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Collections.Immutable.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Console.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Globalization.Calendars.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.IO.Compression.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.IO.FileSystem.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Net.Http.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Net.Sockets.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Reflection.Metadata.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.ValueTuple.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Xml.XmlDocument.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Xml.XPath.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\vbc.exe
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\vbc.exe.config
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\vbc.rsp
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\VBCSCompiler.exe
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\roslyn\VBCSCompiler.exe.config
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Antlr3.Runtime.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\EntityFramework.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\EntityFramework.SqlServer.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.AspNet.Identity.Core.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.Cookies.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.Facebook.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.Google.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.OAuth.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.Twitter.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Web.Infrastructure.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Newtonsoft.Json.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Owin.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.Helpers.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.Mvc.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.Optimization.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.Razor.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.WebPages.Deployment.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.WebPages.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.WebPages.Razor.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\WebGrease.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\EntityFramework.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\EntityFramework.SqlServer.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.Helpers.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.Mvc.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.Optimization.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.Razor.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.WebPages.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.WebPages.Deployment.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\System.Web.WebPages.Razor.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Newtonsoft.Json.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Antlr3.Runtime.pdb
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.AspNet.Identity.Core.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.Facebook.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.Cookies.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.Google.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.Twitter.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\bin\Microsoft.Owin.Security.OAuth.xml
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\obj\Debug\GymPro.csproj.AssemblyReference.cache
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\obj\Debug\GymPro.Migrations.InitDatabase.resources
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\obj\Debug\GymPro.Migrations.AddUserFields.resources
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\obj\Debug\GymPro.csproj.GenerateResource.cache
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\obj\Debug\GymPro.csproj.CoreCompileInputs.cache
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\obj\Debug\GymPro.csproj.Up2Date
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\obj\Debug\GymPro.dll
+C:\MyProject\Project-GymPro\Project-GymPro\GymPro\obj\Debug\GymPro.pdb

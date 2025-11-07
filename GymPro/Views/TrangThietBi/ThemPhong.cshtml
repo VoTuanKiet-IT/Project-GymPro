@@ -1,0 +1,147 @@
+﻿@model GymPro.Models.ThemPhongViewModel
+
+@{
+    ViewBag.Title = "ThemPhong";
+}
+
+<h2>ThemPhong</h2>
+
+
+@using (Html.BeginForm("ThemPhong", "TrangThietBi", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Phong</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.phongs.phong_ma, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.phongs.phong_ma, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.phongs.phong_ma, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.phongs.phong_ten, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.phongs.phong_ten, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.phongs.phong_ten, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.phongs.phong_mota, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.phongs.phong_mota, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.phongs.phong_mota, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.phongs.phong_succhuatoida, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.phongs.phong_succhuatoida, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.phongs.phong_succhuatoida, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.phong_linkanhchinh_file, "Ảnh phòng:", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" name="phong_linkanhchinh_file" id="phong_linkanhchinh_file" class="form-control" />
+            @Html.ValidationMessageFor(model => model.phong_linkanhchinh_file, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @* Thêm thẻ <img> này để hiển thị ảnh xem trước *@
+    <div class="form-group">
+        <div class="col-md-10 col-md-offset-2">
+            <img id="imagePreview" src="#" alt="Xem trước ảnh" style="max-width: 200px; max-height: 200px; display: none;" />
+        </div>
+    </div>
+    <h4>Tải lên nhiều ảnh</h4>
+    <div class="form-group">
+        @Html.LabelFor(model => model.linkanh_files, "Chọn ảnh", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" name="linkanh_files" id="linkanh_files" multiple class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10" id="image-preview-container">
+            @* Các ảnh xem trước sẽ được thêm vào đây bằng JavaScript *@
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            // Lắng nghe sự kiện thay đổi trên input file
+            $("#phong_linkanhchinh_file").change(function () {
+                // Kiểm tra xem có file nào được chọn không
+                if (this.files && this.files[0]) {
+                    var reader = new FileReader();
+
+                    // Khi file được đọc xong
+                    reader.onload = function (e) {
+                        // Cập nhật thuộc tính src của thẻ <img>
+                        $("#imagePreview").attr('src', e.target.result);
+                        // Hiển thị thẻ <img>
+                        $("#imagePreview").show();
+                    }
+
+                    // Đọc file dưới dạng URL dữ liệu
+                    reader.readAsDataURL(this.files[0]);
+                } else {
+                    // Nếu không có file, ẩn thẻ <img>
+                    $("#imagePreview").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            // Lắng nghe sự kiện "change" trên input file
+            $("#linkanh_files").change(function () {
+                var previewContainer = $("#image-preview-container");
+                previewContainer.empty(); // Xóa các ảnh xem trước cũ
+
+                // Lặp qua tất cả các file đã chọn
+                var files = this.files;
+                if (files) {
+                    for (var i = 0; i < files.length; i++) {
+                        (function (file) {
+                            var reader = new FileReader();
+                            // Khi file được đọc xong
+                            reader.onload = function (e) {
+                                // Tạo thẻ <img> mới và gán đường dẫn
+                                var img = $('<img>').attr({
+                                    'src': e.target.result,
+                                    'alt': 'Ảnh xem trước',
+                                    'class': 'img-thumbnail',
+                                    'style': 'max-width: 150px; margin-right: 10px; margin-bottom: 10px;'
+                                });
+                                previewContainer.append(img); // Thêm ảnh vào container
+                            };
+                            // Đọc file dưới dạng URL dữ liệu
+                            reader.readAsDataURL(file);
+                        })(files[i]);
+                    }
+                }
+            });
+        });
+    </script>
+}

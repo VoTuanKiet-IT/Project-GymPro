@@ -1,0 +1,99 @@
+﻿@model GymPro.Models.HuanLuyenVienViewModel
+
+@{
+    ViewBag.Title = "Danh Sách Huấn Luyện Viên";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@if (User.IsInRole("Admin"))
+{
+    <a href="@Url.Action("ThemHuanLuyenVien", "HuanLuyenVien")" class="btn btn-success mb-3">
+        + Thêm Huấn Luyện Viên (PT)
+    </a>
+}
+
+<table class="table table-bordered table-hover">
+    <thead style="background-color: #0BA08B; color: white;">
+        <tr>
+            <th>Họ đệm</th>
+            <th>Tên</th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>Địa chỉ</th>
+            <th>Ngày nhận việc</th>
+            <th>Ảnh đại diện</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.huanluyenvien)
+        {
+            <tr>
+                <td>@item.HuyenLuanViens.hlv_hodem</td>
+                <td>@item.HuyenLuanViens.hlv_ten</td>
+                <td>@item.HuyenLuanViens.hlv_email</td>
+                <td>@item.HuyenLuanViens.hlv_dienthoai</td>
+                <td>@item.gioitinh</td>
+                <td>@item.ngaysinh.ToString("dd/MM/yyyy")</td>
+                <td>@item.HuyenLuanViens.hlv_diachi</td>
+                <td>@item.ngaynhanviec.ToString("dd/MM/yyyy")</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.HuyenLuanViens.hlv_hinhanh))
+                    {
+                        <img src="@item.HuyenLuanViens.hlv_hinhanh"
+                             alt="Ảnh HLV"
+                             style="max-width: 80px; max-height: 80px; border-radius: 6px;" />
+                    }
+                    else
+                    {
+                        <span>Chưa có ảnh</span>
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "SuaHuanLuyenVien", new { id = item.HuyenLuanViens.hlv_ma }, new { @class = "btn btn-warning btn-sm" })
+                    @Html.ActionLink("Chi tiết", "ChiTietHuanLuyenVien", new { id = item.HuyenLuanViens.hlv_ma }, new { @class = "btn btn-info btn-sm" })
+                    @Html.ActionLink("Xóa", "Delete", new { id = item.HuyenLuanViens.hlv_ma }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    body {
+        background-color: #161616;
+        color: #EDECFF;
+    }
+
+    h2 {
+        color: #AEE710;
+        margin-bottom: 20px;
+    }
+
+    .btn-success {
+        background-color: #65C71C;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #0BA08B;
+        }
+
+    table {
+        background-color: #012E25;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    th, td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    th {
+        color: #EDECFF;
+    }
+</style>

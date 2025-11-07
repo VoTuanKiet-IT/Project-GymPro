@@ -1,0 +1,104 @@
+﻿@model GymPro.Models.ThemSanPhamViewModel
+
+@{
+    ViewBag.Title = "ThemSanPham";
+}
+
+<h2>ThemSanPham</h2>
+
+
+@using (Html.BeginForm("ThemSanPham", "SanPham", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>SanPham</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.SanPhams.sanpham_ten, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SanPhams.sanpham_ten, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SanPhams.sanpham_ten, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SanPhams.sanpham_gia, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SanPhams.sanpham_gia, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SanPhams.sanpham_gia, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.sanpham_hinhanhchinh_file, "Ảnh sản phẩm:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="sanpham_hinhanhchinh_file" id="sanpham_hinhanhchinh_file" class="form-control" />
+                @Html.ValidationMessageFor(model => model.sanpham_hinhanhchinh_file, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @* Thêm thẻ <img> này để hiển thị ảnh xem trước *@
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <img id="imagePreview" src="#" alt="Xem trước ảnh" style="max-width: 200px; max-height: 200px; display: none;" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SanPhams.loaisanpham_ma, "loaisanpham_ma", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.SanPhams.loaisanpham_ma, new SelectList(Model.LoaiSanPhams, "loaisanpham_ma", "loaisanpham_ten"), "-- Chọn loại sản phẩm --", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.SanPhams.loaisanpham_ma, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SanPhams.sanpham_mota, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SanPhams.sanpham_mota, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SanPhams.sanpham_mota, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Tạo mới" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+    $(document).ready(function () {
+        // Lắng nghe sự kiện thay đổi trên input file
+        $("#sanpham_hinhanhchinh_file").change(function () {
+            // Kiểm tra xem có file nào được chọn không
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+
+                // Khi file được đọc xong
+                reader.onload = function (e) {
+                    // Cập nhật thuộc tính src của thẻ <img>
+                    $("#imagePreview").attr('src', e.target.result);
+                    // Hiển thị thẻ <img>
+                    $("#imagePreview").show();
+                }
+
+                // Đọc file dưới dạng URL dữ liệu
+                reader.readAsDataURL(this.files[0]);
+            } else {
+                // Nếu không có file, ẩn thẻ <img>
+                $("#imagePreview").hide();
+            }
+        });
+    });
+    </script>
+}

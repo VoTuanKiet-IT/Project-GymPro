@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "User Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Welcome to GymPro!</h2>
+
+<div class="alert alert-success">
+    Xin chào <strong>Hội viên</strong>! Đây là khu vực cá nhân của bạn.
+</div>
+
+<div class="container mt-4">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="/GoiTap/GoiTapListView">🏋️‍♀️ Xem và đăng ký gói tập</a>
+        </li>
+        <li class="list-group-item">
+            <a href="/LichTap/DangKyLichVoiPT">📆 Lịch tập của tôi</a>
+        </li>
+        <li class="list-group-item">
+            <a href="/HoaDon/HoaDonListView">💳 Lịch sử thanh toán</a>
+        </li>
+        <li class="list-group-item">
+            <a href="/SanPham/SanPhamListView">🛒 Cửa hàng Gym</a>
+        </li>
+    </ul>
+</div>

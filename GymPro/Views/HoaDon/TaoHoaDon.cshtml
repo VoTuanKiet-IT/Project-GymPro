@@ -1,0 +1,220 @@
+﻿@model GymPro.Models.SetHoaDonViewModel
+
+@{
+    ViewBag.Title = "Tạo Hóa Đơn Mới";
+}
+
+<h2>Tạo Hóa Đơn Mới</h2>
+<hr />
+
+@using (Html.BeginForm("TaoHoaDon", "HoaDon", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <h3>Thông tin Hóa Đơn Chung</h3>
+
+        @* 1. Chọn Hội viên *@
+        <div class="form-group">
+            @Html.LabelFor(model => model.selected_hoivien_ma, "Hội viên", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.selected_hoivien_ma,
+                                     new SelectList(Model.HoiViens, "hoivien_ma", "TenDayDu"),
+                                     "--- Chọn Hội viên ---",
+                                     new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.selected_hoivien_ma, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @* 2. Ngày Lập *@
+        <div class="form-group">
+            @Html.LabelFor(model => model.ngaylap, "Ngày Lập", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ngaylap, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date", @readonly = "readonly" })
+            </div>
+        </div>
+
+        <hr />
+
+        <h3>Chi tiết Mặt Hàng</h3>
+
+        <div class="row">
+            <div class="col-md-5">
+                @* Dropdown Gộp SP/GT *@
+                <div class="form-group">
+                    <label class="control-label">Mặt Hàng</label>
+                    @Html.DropDownList("ddlMatHang",
+                                     new SelectList(Model.TatCaMatHangs, "Ma", "TenHienThi"),
+                                     "--- Chọn mặt hàng ---",
+                                     new { @class = "form-control" })
+                    <input type="hidden" id="itemDonGia" /> @* Hidden field để lưu đơn giá *@
+                </div>
+            </div>
+            <div class="col-md-3">
+                @* Input Số Lượng *@
+                <div class="form-group">
+                    <label class="control-label">Số Lượng</label>
+                    <input type="number" id="txtSoLuong" value="1" min="1" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-2">
+                @* Nút Thêm *@
+                <div class="form-group">
+                    <label class="control-label" style="visibility: hidden;">Thêm</label>
+                    <button type="button" id="btnAddItem" class="btn btn-success btn-block">Thêm</button>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        @* KHU VỰC HIỂN THỊ DANH SÁCH CHI TIẾT HÓA ĐƠN *@
+        <h4>Các mục đã thêm:</h4>
+        <table class="table table-bordered" id="chiTietTable">
+            <thead>
+                <tr>
+                    <th>Mã</th>
+                    <th>Tên Mặt Hàng</th>
+                    <th>Đơn Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Thành Tiền</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @* Các Row sẽ được thêm vào bằng JavaScript *@
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="text-right"><strong>Tổng Cộng:</strong></td>
+                    <td id="totalAmount">0.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div id="hiddenInputsContainer">
+            @* Các Hidden Input cho List<ChiTietHoaDonRowAdd> sẽ được tạo ở đây bằng JavaScript *@
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-12 text-center">
+                <input type="submit" value="Hoàn Thành & Lưu Hóa Đơn" class="btn btn-primary btn-lg" />
+            </div>
+        </div>
+    </div>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script>
+    $(document).ready(function () {
+        let itemCounter = 0; // Bộ đếm cho việc đặt tên thuộc tính (quan trọng cho POST)
+
+        const itemPrices = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.TatCaMatHangs.ToDictionary(i => i.Ma, i => i.DonGia)));
+
+        // 1. Cập nhật đơn giá khi chọn Mặt hàng
+        $("#ddlMatHang").change(function () {
+            const selectedMa = $(this).val();
+
+            // Kiểm tra xem có mã nào được chọn không (không phải giá trị "--- Chọn mặt hàng ---")
+            if (selectedMa) {
+                // Lấy giá từ object JavaScript đã tạo
+                let price = itemPrices[selectedMa];
+
+                // Đảm bảo giá là số hợp lệ, nếu không gán 0
+                if (typeof price === 'undefined' || price === null) {
+                    price = 0;
+                }
+
+                $("#itemDonGia").val(price);
+                console.log(`Đơn giá đã cập nhật: ${price}`);
+            } else {
+                // Nếu không chọn mục nào, đặt giá về 0
+                $("#itemDonGia").val(0);
+            }
+        }).change(); // Gọi .change() một lần để thiết lập đơn giá ban đầu (nếu có)
+
+        // ----------------------------------------------------
+
+        // 2. Thêm mặt hàng vào bảng
+        $("#btnAddItem").click(function () {
+            const ma = $("#ddlMatHang").val();
+            const ten = $("#ddlMatHang option:selected").text();
+
+            // Lấy giá trị từ hidden field, kiểm tra và chuyển đổi sang số.
+            const donGiaStr = $("#itemDonGia").val();
+            const donGia = parseFloat(donGiaStr) || 0;
+
+            // Lấy số lượng, kiểm tra và chuyển đổi sang số nguyên.
+            const soLuongStr = $("#txtSoLuong").val();
+            const soLuong = parseInt(soLuongStr) || 0;
+
+            // Kiểm tra hợp lệ: Mã phải được chọn, Đơn giá phải > 0, Số lượng phải > 0
+            if (!ma || donGia <= 0 || soLuong <= 0) {
+                alert("Vui lòng chọn mặt hàng và nhập số lượng hợp lệ.");
+                // Log chi tiết để debug nếu lỗi vẫn xảy ra
+                console.error(`Lỗi kiểm tra: Mã=${ma}, Giá=${donGia}, SL=${soLuong}`);
+                return;
+            }
+
+            const thanhTien = donGia * soLuong;
+
+            // Thêm hàng vào bảng hiển thị
+            const newRow = `
+                <tr data-ma="${ma}" data-dongia="${donGia}" data-soluong="${soLuong}" data-thanhtien="${thanhTien}">
+                    <td>${ma}</td>
+                    <td>${ten}</td>
+                    <td>${donGia.toFixed(2)}</td>
+                    <td>${soLuong}</td>
+                    <td class="row-thanhtien">${thanhTien.toFixed(2)}</td>
+                    <td><button type="button" class="btn btn-danger btn-xs btn-remove">Xóa</button></td>
+                </tr>
+            `;
+            $("#chiTietTable tbody").append(newRow);
+
+            // Cập nhật tổng tiền và Hidden Fields
+            updateTotalAndHiddenInputs();
+
+            // Reset inputs
+            $("#txtSoLuong").val(1);
+        });
+
+        // 3. Xóa một mục khỏi bảng
+        $("#chiTietTable").on('click', '.btn-remove', function () {
+            $(this).closest('tr').remove();
+            updateTotalAndHiddenInputs();
+        });
+
+        // 4. Hàm tính tổng và tạo Hidden Inputs cho POST (Giả định hàm này tồn tại)
+        function updateTotalAndHiddenInputs() {
+            let grandTotal = 0;
+            let hiddenHtml = '';
+            itemCounter = 0;
+
+            $("#chiTietTable tbody tr").each(function () {
+                const row = $(this);
+                const ma = row.data('ma');
+                const donGia = row.data('dongia');
+                const soLuong = row.data('soluong');
+                // ... (Phần còn lại của hàm tạo hidden inputs)
+
+                // Cập nhật grandTotal từ dữ liệu data-thanhtien
+                grandTotal += parseFloat(row.data('thanhtien'));
+
+                // TẠO HIDDEN INPUTS CHO MODEL BINDING
+                hiddenHtml += `
+                    <input type="hidden" name="ChiTietHoaDons[${itemCounter}].cthoadon_soluong" value="${soLuong}" />
+                    <input type="hidden" name="ChiTietHoaDons[${itemCounter}].chihoa_items.Ma" value="${ma}" />
+                    <input type="hidden" name="ChiTietHoaDons[${itemCounter}].chihoa_items.DonGia" value="${donGia}" />
+                `;
+                itemCounter++;
+            });
+
+            $("#totalAmount").text(grandTotal.toFixed(2));
+            $("#hiddenInputsContainer").html(hiddenHtml);
+        }
+    });
+</script>
+}

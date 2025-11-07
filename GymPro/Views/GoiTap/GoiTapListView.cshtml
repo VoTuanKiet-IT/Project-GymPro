@@ -1,0 +1,186 @@
+﻿@model GymPro.Models.GoiTapViewModel
+
+@{
+    ViewBag.Title = "GoiTapListView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="admin-dashboard">
+    <h2>Danh Sách Các Gói Tập</h2>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <a href="@Url.Action("CreateGoiTap", "GoiTap")" class="btn btn-primary">+ Thêm gói tập</a>
+    }
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.GoiTaps.FirstOrDefault().goitap_tengoi)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.GoiTaps.FirstOrDefault().goitap_gia)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.GoiTaps.FirstOrDefault().goitap_thoihan)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.GoiTaps.FirstOrDefault().goitap_motagoi)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ int stt = 1; }
+                @foreach (var item in Model.GoiTaps)
+                {
+                    <tr>
+                        <td>
+                            @stt
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.goitap_tengoi)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.goitap_gia)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.goitap_thoihan)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.goitap_motagoi)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Sửa", "SuaGoiTap", new { id = item.goitap_ma }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.goitap_ma }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.goitap_ma })
+                        </td>
+                    </tr>
+                    stt++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #161616;
+        color: #EDECFF;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .admin-dashboard {
+        max-width: 1000px;
+        margin: 40px auto;
+        background: #012E25;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(101, 199, 28, 0.2);
+    }
+
+    .dashboard-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #AEE710;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .btn-add {
+        display: inline-block;
+        background: #65C71C;
+        color: #161616;
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+        .btn-add:hover {
+            background: #AEE710;
+            color: #012E25;
+            transform: translateY(-2px);
+        }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .table-gym {
+        width: 100%;
+        border-collapse: collapse;
+        color: #EDECFF;
+    }
+
+        .table-gym th, .table-gym td {
+            border: 1px solid #0BA08B;
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        .table-gym th {
+            background-color: #0BA08B;
+            color: #161616;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .table-gym tr:nth-child(even) {
+            background-color: #012E25;
+        }
+
+        .table-gym tr:hover {
+            background-color: #0BA08B;
+            color: #161616;
+            transition: 0.3s;
+        }
+
+    .action-links {
+        text-align: center;
+    }
+
+    .action-btn {
+        text-decoration: none;
+        padding: 5px 8px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+        .action-btn.edit {
+            color: #AEE710;
+        }
+
+        .action-btn.detail {
+            color: #65C71C;
+        }
+
+        .action-btn.delete {
+            color: #FF6B6B;
+        }
+
+        .action-btn:hover {
+            text-decoration: underline;
+        }
+
+    @@media (max-width: 768px) {
+        .admin-dashboard {
+            padding: 15px;
+        }
+
+        .dashboard-title {
+            font-size: 1.5rem;
+        }
+
+        .table-gym th, .table-gym td {
+            font-size: 0.9rem;
+            padding: 8px;
+        }
+    }
+</style>

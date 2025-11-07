@@ -1,0 +1,56 @@
+﻿@model GymPro.Models.HoaDonViewModel
+
+<h2>Danh sách các hóa đơn</h2>
+@if (User.IsInRole("Admin"))
+{
+    <a href="@Url.Action("Tạo hóa đơn...", "TaoHoaDon")" class="btn btn-primary">+ Thêm hóa đơn</a>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HoaDons.FirstOrDefault().hoadon.hoadon_ma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoaDons.FirstOrDefault().hoivien.hoivien_hodem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoaDons.FirstOrDefault().hoadon.hoadon_sotien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoaDons.FirstOrDefault().hoadon.hoadon_ngaylap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoaDons.FirstOrDefault().hoadon.hoadon_hinhthucthanhtoan)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.HoaDons)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.hoadon.hoadon_ma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hoivien.hoivien_hodem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hoadon.hoadon_sotien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ngaylap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hoadon.hoadon_hinhthucthanhtoan)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.hoadon.hoadon_ma }) |
+                @Html.ActionLink("Details", "Details", new { id = item.hoadon.hoadon_ma }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.hoadon.hoadon_ma })
+            </td>
+        </tr>
+    }
+
+</table>
+

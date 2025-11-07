@@ -1,0 +1,51 @@
+﻿@model IEnumerable<GymPro.Models.Phong>
+
+@{
+    ViewBag.Title = "PhongListView";
+}
+
+<h2>PhongListView</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.phong_ten)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phong_mota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phong_succhuatoida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phong_anhchinh)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.phong_ten)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phong_mota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phong_succhuatoida)
+        </td>
+        <td>
+            <img src="~/App_Data/" alt="Hình phòng" style="max-width: 100px; max-height: 100px;" />
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.phong_ma }) |
+            @Html.ActionLink("Details", "Details", new { id=item.phong_ma }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.phong_ma })
+        </td>
+    </tr>
+}
+
+</table>
