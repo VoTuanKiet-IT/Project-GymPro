@@ -70,6 +70,7 @@ namespace GymPro.Controllers
         {
             if (!ModelState.IsValid)
             {
+                ViewBag.ReturnUrl = returnUrl; // Cần thiết để giữ lại ReturnUrl
                 return View(model);
             }
 
@@ -92,7 +93,7 @@ namespace GymPro.Controllers
                         return RedirectToAction("Index", "UserDashboard");
 
                     // Nếu không có role nào, quay về trang chủ
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "UserDashboard");
 
                 case SignInStatus.LockedOut:
                     return View("Lockout");
@@ -178,7 +179,7 @@ namespace GymPro.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "UserDashboard");
                 }
                 AddErrors(result);
             }
@@ -407,7 +408,7 @@ namespace GymPro.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "UserDashboard");
         }
 
         //

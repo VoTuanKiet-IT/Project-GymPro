@@ -18,6 +18,9 @@
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("MainLayout", "Index", "UserDashboard", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("AdminLayout", "Index", "AdminDashboard", new { area = "" }, new { @class = "nav-link" })</li>
+
                     <li>@Html.ActionLink("Hội Viên", "HoiVienListView", "HoiVien", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Gói Tập", "GoiTapListView", "GoiTap", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Hợp Đồng", "HopDongHoiVienListView", "HopDongHoiVien", new { area = "" }, new { @class = "nav-link" })</li>

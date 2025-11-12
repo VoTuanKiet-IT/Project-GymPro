@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/Styles")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="css-vu19p2 css-7tvcgb css-324jje">
+        <div class="tailwind css-myl2ny css-10v5rb css-gs60ek">
+            <div class="flex h-screen bg-[#F3F4F6]">
+                <div class="bg-[#111827] h-screen transition-all duration-300 ease-in-out w-64 flex flex-col">
+                    <div class="p-4 border-b border-gray-700">
+                        <div class="flex items-center justify-between">
+                            <h2 class="text-white text-lg font-medium">GymDash</h2>
+                            <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 size-9 rounded-md text-white hover:bg-gray-700 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <nav class="flex-1 p-4">
+                        <ul class="space-y-2">
+                            <li>
+                                <button onclick="location.href='@Url.Action("Index", "AdminDashboard", new { area = "" })'"
+                                        class="w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors bg-gray-700 text-white justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-dashboard" aria-hidden="true">
+                                        <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                                        <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                                        <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                                        <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                                    </svg>
+                                    <span class="text-sm">Dashboard</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='@Url.Action("HoiVienListView", "HoiVien", new { area = "" })'"
+                                        class="w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-gray-300 hover:bg-gray-700 hover:text-white justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users" aria-hidden="true">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <span class="text-sm">Hội Viên</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='@Url.Action("HoiVienListView", "HoiVien", new { area = "" })'"
+                                        class="w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-gray-300 hover:bg-gray-700 hover:text-white justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap" aria-hidden="true">
+                                        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                    </svg>
+                                    <span class="text-sm">Ejercicios</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='@Url.Action("HoiVienListView", "HoiVien", new { area = "" })'"
+                                        class="w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-gray-300 hover:bg-gray-700 hover:text-white justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dumbbell" aria-hidden="true">
+                                        <path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z"></path>
+                                        <path d="m2.5 21.5 1.4-1.4"></path>
+                                        <path d="m20.1 3.9 1.4-1.4"></path>
+                                        <path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z"></path>
+                                        <path d="m9.6 14.4 4.8-4.8"></path>
+                                    </svg>
+                                    <span class="text-sm">Rutinas</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='@Url.Action("HoiVienListView", "HoiVien", new { area = "" })'"
+                                        class="w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-gray-300 hover:bg-gray-700 hover:text-white justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column" aria-hidden="true">
+                                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                        <path d="M18 17V9"></path>
+                                        <path d="M13 17V5"></path>
+                                        <path d="M8 17v-3"></path>
+                                    </svg>
+                                    <span class="text-sm">Estadísticas</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='@Url.Action("HoiVienListView", "HoiVien", new { area = "" })'"
+                                        class="w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-gray-300 hover:bg-gray-700 hover:text-white justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell" aria-hidden="true">
+                                        <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                                        <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
+                                    </svg>
+                                    <span class="text-sm">Notificaciones</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='@Url.Action("HoiVienListView", "HoiVien", new { area = "" })'"
+                                        class="w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-gray-300 hover:bg-gray-700 hover:text-white justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true">
+                                        <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    <span class="text-sm">Configuración</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="flex-1 flex flex-col min-w-0">
+                    <header class="bg-white border-b border-gray-200 px-6 py-4">
+                        <div class="flex items-center justify-between">
+                            <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
+                            <button data-slot="dropdown-menu-trigger"
+                                    class="justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 flex items-center gap-2 hover:bg-gray-50"
+                                    type="button" id="radix-:r0:" aria-haspopup="menu" aria-expanded="false" data-state="closed">
+                                <span data-slot="avatar" class="relative flex size-10 shrink-0 overflow-hidden rounded-full h-8 w-8">
+                                    <img data-slot="avatar-image" class="aspect-square size-full" alt="Carlos Rodríguez" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&amp;h=150&amp;fit=crop&amp;crop=face">
+                                </span>
+                                @using Microsoft.AspNet.Identity
+                                <span class="text-sm text-gray-700"></span>
+                                @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class = "text-sm text-gray-700" })
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down text-gray-500" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </header>
+                    <main class="flex-1 p-6 overflow-auto">
+                        <div class="max-w-7xl mx-auto">
+                            <div class="space-y-6">
+                                    @RenderBody()
+                            </div>
+                        </div>
+                        <footer class="mt-2 max-w-7xl mx-auto">
+                            <p class=" text-sm">&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                        </footer>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,62 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\",
+  "WorkspaceRootPath": "C:\\MyProject\\Project-GymPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|c:\\myproject\\project-gympro\\project-gympro\\gympro\\models\\hopdonghoivien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\models\\hopdonghoivien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\goitap\\goitaplistview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\goitap\\goitaplistview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\goitap\\creategoitap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\goitap\\creategoitap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\huanluyenvien\\themchuyenmon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\huanluyenvien\\themchuyenmon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\huanluyenvien\\suahuanluyenvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\huanluyenvien\\suahuanluyenvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\hopdonghoivien\\hopdonghoivienlistview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\hopdonghoivien\\hopdonghoivienlistview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\models\\huanluyenvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\models\\huanluyenvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\hoivien\\suahoivien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\hoivien\\suahoivien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\hoivien\\themhoivien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\hoivien\\themhoivien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\hoivien\\chitiethoivien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\hoivien\\chitiethoivien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\hoivien\\hoivienlistview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|c:\\myproject\\project-gympro\\gympro\\views\\hoivien\\hoivienlistview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\hoivien\\hoivienlistview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\gympro\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\gympro\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\Project-GymPro\\gympro\\views\\goitap\\suagoitap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\goitap\\suagoitap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|C:\\MyProject\\Project-GymPro\\gympro\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{024C8251-5272-4561-9468-1F7A691BFDA8}|GymPro\\GymPro.csproj|solutionrelative:gympro\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,173 +46,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Web.config",
-              "RelativeDocumentMoniker": "GymPro\\Web.config",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Web.config",
-              "RelativeToolTip": "GymPro\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-06T23:10:32.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateGoiTap.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\GoiTap\\CreateGoiTap.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\GoiTap\\CreateGoiTap.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\GoiTap\\CreateGoiTap.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\GoiTap\\CreateGoiTap.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "HoiVienListView.cshtml",
+              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\GymPro\\Views\\HoiVien\\HoiVienListView.cshtml",
+              "RelativeDocumentMoniker": "GymPro\\Views\\HoiVien\\HoiVienListView.cshtml",
+              "ToolTip": "C:\\MyProject\\Project-GymPro\\GymPro\\Views\\HoiVien\\HoiVienListView.cshtml",
+              "RelativeToolTip": "GymPro\\Views\\HoiVien\\HoiVienListView.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAxwEgAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T18:49:58.557Z"
+              "WhenOpened": "2025-11-11T04:48:11.495Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GoiTapListView.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\GoiTap\\GoiTapListView.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\GoiTap\\GoiTapListView.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\GoiTap\\GoiTapListView.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\GoiTap\\GoiTapListView.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T18:34:16.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SuaHuanLuyenVien.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HuanLuyenVien\\SuaHuanLuyenVien.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\HuanLuyenVien\\SuaHuanLuyenVien.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HuanLuyenVien\\SuaHuanLuyenVien.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\HuanLuyenVien\\SuaHuanLuyenVien.cshtml",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAswNAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T20:57:37.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ThemChuyenMon.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HuanLuyenVien\\ThemChuyenMon.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\HuanLuyenVien\\ThemChuyenMon.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HuanLuyenVien\\ThemChuyenMon.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\HuanLuyenVien\\ThemChuyenMon.cshtml",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAswKkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T21:00:54.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HopDongHoiVien.cs",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Models\\HopDongHoiVien.cs",
-              "RelativeDocumentMoniker": "GymPro\\Models\\HopDongHoiVien.cs",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Models\\HopDongHoiVien.cs",
-              "RelativeToolTip": "GymPro\\Models\\HopDongHoiVien.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBcAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T20:27:17.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HuanLuyenVien.cs",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Models\\HuanLuyenVien.cs",
-              "RelativeDocumentMoniker": "GymPro\\Models\\HuanLuyenVien.cs",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Models\\HuanLuyenVien.cs",
-              "RelativeToolTip": "GymPro\\Models\\HuanLuyenVien.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T20:27:01.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HopDongHoiVienListView.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HopDongHoiVien\\HopDongHoiVienListView.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\HopDongHoiVien\\HopDongHoiVienListView.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HopDongHoiVien\\HopDongHoiVienListView.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\HopDongHoiVien\\HopDongHoiVienListView.cshtml",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAgwI8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T20:02:07.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ThemHoiVien.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HoiVien\\ThemHoiVien.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\HoiVien\\ThemHoiVien.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HoiVien\\ThemHoiVien.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\HoiVien\\ThemHoiVien.cshtml",
-              "ViewState": "AgIAANAAAAAAAAAAAAAgwOEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T19:58:18.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SuaHoiVien.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HoiVien\\SuaHoiVien.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\HoiVien\\SuaHoiVien.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HoiVien\\SuaHoiVien.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\HoiVien\\SuaHoiVien.cshtml",
-              "ViewState": "AgIAANoAAAAAAAAAAAAgwOsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T19:54:02.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ChiTietHoiVien.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HoiVien\\ChiTietHoiVien.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\HoiVien\\ChiTietHoiVien.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HoiVien\\ChiTietHoiVien.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\HoiVien\\ChiTietHoiVien.cshtml",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAswAcBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T19:46:28.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SuaGoiTap.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\GoiTap\\SuaGoiTap.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\GoiTap\\SuaGoiTap.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\GoiTap\\SuaGoiTap.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\GoiTap\\SuaGoiTap.cshtml",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAswKIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T19:01:30.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\AdminDashboard\\Index.cshtml",
+              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\GymPro\\Views\\AdminDashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "GymPro\\Views\\AdminDashboard\\Index.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\AdminDashboard\\Index.cshtml",
+              "ToolTip": "C:\\MyProject\\Project-GymPro\\GymPro\\Views\\AdminDashboard\\Index.cshtml",
               "RelativeToolTip": "GymPro\\Views\\AdminDashboard\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T18:14:02.01Z"
+              "WhenOpened": "2025-11-11T04:13:16.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HoiVienListView.cshtml",
-              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HoiVien\\HoiVienListView.cshtml",
-              "RelativeDocumentMoniker": "GymPro\\Views\\HoiVien\\HoiVienListView.cshtml",
-              "ToolTip": "C:\\MyProject\\Project-GymPro\\Project-GymPro\\GymPro\\Views\\HoiVien\\HoiVienListView.cshtml",
-              "RelativeToolTip": "GymPro\\Views\\HoiVien\\HoiVienListView.cshtml",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAswLoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\GymPro\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "GymPro\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\MyProject\\Project-GymPro\\GymPro\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "GymPro\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAJAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-01T07:23:31.67Z"
+              "WhenOpened": "2025-11-10T20:31:37.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\MyProject\\Project-GymPro\\GymPro\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "GymPro\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\MyProject\\Project-GymPro\\GymPro\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "GymPro\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T19:26:40.291Z"
             }
           ]
         },

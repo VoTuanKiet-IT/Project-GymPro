@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="~/Content/CSS/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Webgym.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <header class="bg-black text-white fixed w-full z-50 top-0">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-2xl font-bold">TheNewGym</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="" class="font-vn text-under-none hover:text-yellow-500">Trang Chu</a>
+                <a href="" class="font-vn text-under-none hover:text-yellow-500">Dich Vu</a>
+                <a href="" class="font-vn text-under-none hover:text-yellow-500">Goi Hoi Vien</a>
+                <a href="" class="font-vn text-under-none hover:text-yellow-500">Lien He</a>
+                @using Microsoft.AspNet.Identity
+                @if (Request.IsAuthenticated)
+                {
+                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a href="#register" class="hover:text-yellow-500">
+                            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+                        </a>
+                    }
+                }
+                else
+                {
+                    <a href="" class="hover:text-yellow-500">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link" })</a>
+                    <a href="" class="hover:text-yellow-500">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</a>
+                }
+            </nav>
+            <button id="menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="menu" class="md:hidden hidden bg-black px-6 pb-4">
+            <a href="#" class="block py-2 hover:text-yellow-500">Trang Chủ</a>
+            <a href="#services" class="block py-2 hover:text-yellow-500">Dịch Vụ</a>
+            <a href="#pricing" class="block py-2 hover:text-yellow-500">Gói Hội Viên</a>
+            <a href="#register" class="block py-2 hover:text-yellow-500">Liên Hệ</a>
+        </div>
+    </header>
+
+     @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
